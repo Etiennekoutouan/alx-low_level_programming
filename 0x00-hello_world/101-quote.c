@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib>
+
 /**
  * main- Entry point
  * @void: parameter
@@ -8,8 +8,10 @@
 
 int main(void)
 {
-	fprintf("stderr, 'and that piece of art is useful\' - Dora Korpar, 2015-10-19\n'");
+	fprintf(stderr, "and that piece of art is useful\" - \
+Dora Korpar, 2015-10-19\n");
 
 	return (1);
 }
+
 

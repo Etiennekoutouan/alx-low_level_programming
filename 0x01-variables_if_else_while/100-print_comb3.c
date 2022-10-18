@@ -35,6 +35,3 @@ if (i == j)
 	putchar('\n');
 	return (0);
 }
-
-
-

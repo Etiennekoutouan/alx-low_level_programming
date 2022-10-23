@@ -1,35 +1,43 @@
  #include "main.h"
-
-
-
 /**
+* main - check the code.
+*
+* Return: Always 0.
+*/
+{
+        int num, A, B;
 
- * main - check the code.
+        if (n >= 0 && n <= 15)
+        {
+                for (num = 0; num <= n; num++)
+                {
+                        _putchar('0');
 
-  *
+                        for (A = 1; A <= n; A++)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
 
-   * Return: Always 0.
+                                B = num * A;
 
-    */
+                                if (B <= 99)
+                                        _putchar(' ');
+                                if (B <= 9)
+                                        _putchar(' ');
 
-    int main(void)
+                                if (B >= 100)
+                                {
+                                        _putchar((B / 100) + '0');
+                                        _putchar(((B / 10)) % 10 + '0');
+                                }
+                                else if (B <= 99 && B >= 10)
+                                {
+                                        _putchar((B / 10) + '0');
+                                }
+                                _putchar((B % 10) + '0');
+                        }
+                        _putchar('\n');
+                }
+        }
+}
 
-    {
-
-	        print_times_table(3);
-
-		    _putchar(n);
-
-		        print_times_table(5);
-
-			    _putchar(n);
-
-			        print_times_table(98);
-
-				    _putchar(n);
-
-				        print_times_table(12);  
-
-					    return (0);
-
-				    } 

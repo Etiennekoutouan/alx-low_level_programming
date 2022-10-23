@@ -1,7 +1,4 @@
 #include "main.h"
-
-
-
 /**
 
  * main - check the code
@@ -11,13 +8,28 @@
    * Return: Always 0.
 
     */
+void times_table(void)
+{
+	int num, mult, prod;
 
-    int main(void)
+	for (num = 0; num <= 9; num++)
+	{
+		_putchar('0');
 
-    {
+		for (mult = 1; mult <= 9; mult++)
+		{
+			_putchar(',');
+			_putchar(' ');
 
-	        times_table();
+			prod = num * mult;
 
-		    return (0);
+			if (prod <= 9)
+				_putchar(' ');
+			else
+				_putchar((prod / 10) + '0');
 
-	    } 
+			_putchar((prod % 10) + '0');
+		}
+		_putchar('\n');
+	}
+}

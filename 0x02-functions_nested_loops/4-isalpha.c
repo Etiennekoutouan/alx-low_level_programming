@@ -1,8 +1,9 @@
-include "main.h"
+#include "main.h"
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _isalpha - test wheter a character is from the english alphabet
+ * @c: character to be checked
+ * Return: 1 if the character is an english character
+ * 0 if the character is not an english character
  */
 int _isalpha(int c)
 {

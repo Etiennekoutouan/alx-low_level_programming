@@ -1,21 +1,18 @@
 #include "main.h"
 /**
-
- * main - check the code.
-
-  *
-
-   * Return: Always 0.
-   */
+ * print_alphabet_x10 - repeats the alphabet 10 times
+ * Return: Always 0.
+ */
 void print_alphabet_x10(void)
+{
+	char y;
+	int i;
 
-	char letter, i;
-
-	for (i = 0; i <= 9; i++)
+	for (y = 0; y <= 9; y++)
 	{
-		for (letter = 'a' ; letter <= 'z'; letter++)
+		for (i = 'a' ; i <= 'z'; i++)
 		{
-			_putchar(letter);
+			_putchar(y);
 		}
 		_putchar('\n');
 	}

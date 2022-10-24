@@ -1,13 +1,8 @@
 #include "main.h"
 /**
-
- * main - check the code
-
-  *
-
-   * Return: Always 0.
-
-    */
+ *times_table - prints the times table from 0 - 9
+ * Return: 0
+ */
 void times_table(void)
 {
 	int num, mult, prod;

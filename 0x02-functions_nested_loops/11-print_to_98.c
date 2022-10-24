@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+* print_to_98 - print alla natural numbers from n to 98.
+* @n: the starting number
+*/
 void print_to_98(int n)
 {
 	if (n >= 98)

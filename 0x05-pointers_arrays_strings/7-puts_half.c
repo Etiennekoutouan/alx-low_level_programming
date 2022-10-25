@@ -1,14 +1,34 @@
 #include "main.h"
 /**
-*function presentation - the algorythme fonction in c
-*new caractere chaine
-*Return: Always 0
+*puts_half - Prints half of a string
+*@str: The string to print
+*
+*Return: void
 */
-int main(void)
+void puts_half(char *str)
 {
-	char *str;
+	int j = 0;
+	int k;
 
-	str = "0123456789";
-	puts_half(str);
-	return (0);
+	while (str[j] != '\0')
+	{
+		j++;
+	}
+
+	if (j % 2 == 1)
+	{
+		k = (j - 1) / 2;
+		k += 1;
+	}
+	else
+	{
+		k = j / 2;
+	}
+
+	for (; k < j; k++)
+	{
+		_putchar(str[k]);
+	}
+
+	_putchar('\n');
 }
